@@ -1,5 +1,3 @@
-# LCIV-FINAL-20022024 
-
 # API REST de Gestión de Materias
 
 ## Contexto del Negocio:
@@ -7,7 +5,7 @@ Es el encargado de diseñar un sistema para la carga de notas de alumnos en sus 
 
 ## Enpoint a diseñar
 
-### Registrar materias en alumnos **(10 pts)**
+### Registrar materias en alumnos
 
 - Endpoint: ```/gestion```
 - Método: ```POST```
@@ -46,7 +44,7 @@ Es el encargado de diseñar un sistema para la carga de notas de alumnos en sus 
   }
 ```
 
-### Registrar nota del alumno **(10 pts)**
+### Registrar nota del alumno 
 
 - Endpoint: ```/gestion```
 - Método: ```PUT```
@@ -68,7 +66,7 @@ Es el encargado de diseñar un sistema para la carga de notas de alumnos en sus 
   }
 ```
 
-### Listar informe académico **(10 pts)**
+### Listar informe académico 
 
 - Endpoint: ```/gestion```
 - Método: ```GET```
@@ -90,14 +88,14 @@ Es el encargado de diseñar un sistema para la carga de notas de alumnos en sus 
 
 ### Calculo de estado académico
 
-### Definición de estado **(10 pts)**
+### Definición de estado
 - El alumno tendrá un estado académico por cada materia según la calificación registrada
 
 * LIBRE: Nota menor a 4
 * REGULAR: Nota mayor o igual a 4 y menor a 9
 * PROMOCIONADO: Nota mayor o igual a 9
 
-### Definición de resultado general de la materia **(10 pts)**
+### Definición de resultado general de la materia
 - La materia se considera EXITOSA cuando el porcentaje de alumnos regulares y promocionados supera el 60%, caso contrario el resultado de la materia se considerará como FRACASO
 
 ---
@@ -165,9 +163,6 @@ A continuación, se detalla la información que se consultará desde la API exte
 ]
 ```
 ---
-### Docker (10 pts)
+### Docker 
 - Crear un archivo Dockerfile para dockerizar el proyecto
 - Crear un archivo docker-compose que permita levantar tanto este servicio como el servicio externo
----
-### Testing **(40 pts)**
-- Es obligatorio la creación de testing unitario sobre la lógica de negocio de todo el proyecto
